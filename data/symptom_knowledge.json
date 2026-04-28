@@ -1,0 +1,297 @@
+{
+  "knowledge_base": [
+    {
+      "id": "fever_001",
+      "category": "fever",
+      "age_group": "newborn_0_3m",
+      "symptom": "fever in newborn under 3 months",
+      "red_flags": ["any fever >= 38°C / 100.4°F in under 3 months"],
+      "triage_level": "emergency",
+      "action": "Go to emergency room immediately. Fever in newborns under 3 months is always a medical emergency.",
+      "reasoning": "Neonatal immune systems cannot fight infection effectively. Fever may indicate sepsis, meningitis, or serious bacterial infection requiring urgent workup.",
+      "products": [],
+      "keywords": ["fever", "temperature", "hot", "newborn", "baby", "حمى", "حرارة", "مولود"],
+      "arabic_notes": "أي حمى في الرضيع أقل من 3 أشهر تستدعي الطوارئ فوراً"
+    },
+    {
+      "id": "fever_002",
+      "category": "fever",
+      "age_group": "infant_3_12m",
+      "symptom": "fever in infant 3-12 months",
+      "red_flags": ["fever > 39°C lasting > 3 days", "fever with rash", "fever with stiff neck", "fever with inconsolable crying", "fever with difficulty breathing"],
+      "triage_level": "urgent_if_red_flag_else_monitor",
+      "action": "Monitor closely. Fever under 38.9°C with no red flags — use age-appropriate paracetamol, keep hydrated. Seek care if any red flags appear or fever persists > 3 days.",
+      "reasoning": "Most fevers in this age group are viral and self-limiting, but red flags indicate serious bacterial infection.",
+      "products": [
+        {"name": "Baby paracetamol/acetaminophen drops", "category": "medicine", "note": "Always check age-appropriate dosing"},
+        {"name": "Digital ear thermometer", "category": "health_device"},
+        {"name": "Baby cooling gel pads", "category": "comfort"},
+        {"name": "Oral rehydration sachets for infants", "category": "hydration"}
+      ],
+      "keywords": ["fever", "temperature", "hot", "infant", "حمى", "حرارة", "رضيع"],
+      "arabic_notes": "راقبي درجة الحرارة وأعطي الباراسيتامول المناسب للعمر"
+    },
+    {
+      "id": "fever_003",
+      "category": "fever",
+      "age_group": "toddler_1_5y",
+      "symptom": "fever in toddler 1-5 years",
+      "red_flags": ["fever > 40°C", "fever with seizure", "fever with rash that doesn't fade under pressure", "fever with severe headache", "child looks very unwell/limp"],
+      "triage_level": "monitor_with_red_flag_awareness",
+      "action": "Manage at home with paracetamol or ibuprofen (over 6 months). Keep child hydrated. Rest. Seek medical attention if red flags present or fever > 5 days.",
+      "reasoning": "Febrile seizures, while scary, are usually benign in this age group but need evaluation. Non-blanching rash may indicate meningococcal disease.",
+      "products": [
+        {"name": "Children's paracetamol syrup", "category": "medicine"},
+        {"name": "Children's ibuprofen syrup", "category": "medicine"},
+        {"name": "Forehead thermometer strip", "category": "health_device"},
+        {"name": "Children's electrolyte drink", "category": "hydration"},
+        {"name": "Cool mist humidifier", "category": "comfort"}
+      ],
+      "keywords": ["fever", "temperature", "toddler", "child", "حمى", "حرارة", "طفل", "رضيع"],
+      "arabic_notes": "للأطفال من 1-5 سنوات، الباراسيتامول أو الإيبوبروفين مع كثير من السوائل"
+    },
+    {
+      "id": "breathing_001",
+      "category": "respiratory",
+      "age_group": "all",
+      "symptom": "difficulty breathing / labored breathing",
+      "red_flags": ["blue lips or fingertips (cyanosis)", "nostril flaring", "ribs visible when breathing (chest retractions)", "breathing rate > 60 breaths/min in infant", "grunting sounds", "cannot complete sentences", "breathing stops"],
+      "triage_level": "emergency",
+      "action": "Call emergency services (999 UAE / 911 / 112) immediately. Do not wait. Respiratory distress is a medical emergency.",
+      "reasoning": "Children decompensate rapidly. Any signs of respiratory distress indicate insufficient oxygenation which can become life-threatening within minutes.",
+      "products": [],
+      "keywords": ["breathing", "breath", "respiratory", "wheezing", "cough", "تنفس", "صعوبة التنفس", "أزيز"],
+      "arabic_notes": "صعوبة التنفس طارئة طبية - اتصلي بالإسعاف فوراً"
+    },
+    {
+      "id": "breathing_002",
+      "category": "respiratory",
+      "age_group": "all",
+      "symptom": "mild cough / runny nose / cold symptoms",
+      "red_flags": ["cough lasting > 3 weeks", "cough with blood", "barking seal-like cough (croup)", "wheezing in infant under 1 year"],
+      "triage_level": "home_care",
+      "action": "Rest, fluids, saline drops for congestion. Honey for children over 1 year (never under 1). Elevate head slightly for sleep. See doctor if no improvement in 7-10 days or red flags appear.",
+      "reasoning": "Upper respiratory infections are most commonly viral and self-limiting. Antibiotics are not indicated. Supportive care is appropriate.",
+      "products": [
+        {"name": "Saline nasal drops for babies", "category": "medicine"},
+        {"name": "Nasal aspirator / bulb syringe", "category": "health_device"},
+        {"name": "Baby chest rub (eucalyptus-free for under 2)", "category": "comfort"},
+        {"name": "Cool mist humidifier", "category": "comfort"},
+        {"name": "Baby honey (over 12 months only)", "category": "nutrition"}
+      ],
+      "keywords": ["cough", "cold", "runny nose", "congestion", "سعال", "زكام", "احتقان"],
+      "arabic_notes": "الزكام عادةً فيروسي يتحسن خلال 7-10 أيام مع الراحة والسوائل"
+    },
+    {
+      "id": "rash_001",
+      "category": "dermatology",
+      "age_group": "all",
+      "symptom": "rash with fever - non-blanching",
+      "red_flags": ["purple or red spots that don't fade when pressed with a glass"],
+      "triage_level": "emergency",
+      "action": "Emergency. A non-blanching rash with fever may indicate meningococcal septicemia. Call emergency services immediately.",
+      "reasoning": "Non-blanching purpuric rash is a hallmark of meningococcal disease which carries high mortality if untreated. Glass test: press a glass on the rash — if it doesn't fade, it's an emergency.",
+      "products": [],
+      "keywords": ["rash", "spots", "purpura", "petechiae", "fever", "طفح", "بقع", "حمى"],
+      "arabic_notes": "الطفح الذي لا يختفي عند الضغط مع الحمى = طارئة فورية"
+    },
+    {
+      "id": "rash_002",
+      "category": "dermatology",
+      "age_group": "infant_toddler",
+      "symptom": "diaper rash / nappy rash",
+      "red_flags": ["rash spreading outside diaper area", "satellite lesions (separate red dots nearby)", "blisters or open sores", "fever accompanying rash"],
+      "triage_level": "home_care",
+      "action": "Air the area as much as possible. Barrier cream at every change. Frequent diaper changes. If no improvement in 3-4 days or red flags, see doctor (may be candida).",
+      "reasoning": "Most diaper rashes are irritant contact dermatitis. Candidal infection (satellite lesions) requires antifungal cream which needs a prescription.",
+      "products": [
+        {"name": "Zinc oxide barrier cream", "category": "skincare"},
+        {"name": "Fragrance-free baby wipes", "category": "hygiene"},
+        {"name": "Cloth diapers or breathable diapers", "category": "hygiene"},
+        {"name": "Baby barrier ointment (bepanthen-type)", "category": "skincare"}
+      ],
+      "keywords": ["diaper rash", "nappy rash", "red bottom", "skin irritation", "حفاض", "طفح الحفاض", "احمرار"],
+      "arabic_notes": "احمرار منطقة الحفاض: كريم الزنك مع التهوية المتكررة"
+    },
+    {
+      "id": "gi_001",
+      "category": "gastrointestinal",
+      "age_group": "all",
+      "symptom": "vomiting and diarrhea / gastroenteritis",
+      "red_flags": ["signs of dehydration: no tears, dry mouth, no wet diapers for 6+ hours, sunken eyes, sunken fontanelle in infants", "blood in vomit or stool", "bile-green vomit in newborn", "severe abdominal pain", "vomiting > 24 hours in infant"],
+      "triage_level": "monitor_dehydration",
+      "action": "Prioritize rehydration with ORS (oral rehydration solution) in small sips. Continue breastfeeding if applicable. BRAT diet for toddlers when tolerating food. Seek care if dehydration signs appear.",
+      "reasoning": "Gastroenteritis is common and usually viral. The danger is dehydration, not the infection itself. ORS is more effective than plain water.",
+      "products": [
+        {"name": "Oral rehydration sachets (ORS) for infants", "category": "health"},
+        {"name": "Probiotic drops for babies", "category": "nutrition"},
+        {"name": "Baby electrolyte solution", "category": "hydration"},
+        {"name": "Gentle baby wipes (extra soft)", "category": "hygiene"},
+        {"name": "Extra barrier cream (frequent stool changes)", "category": "skincare"}
+      ],
+      "keywords": ["vomiting", "diarrhea", "stomach", "gastro", "قيء", "إسهال", "معدة"],
+      "arabic_notes": "محلول معالجة الجفاف الفموي (ORS) هو الأهم - رشفات صغيرة ومتكررة"
+    },
+    {
+      "id": "gi_002",
+      "category": "gastrointestinal",
+      "age_group": "infant_0_12m",
+      "symptom": "colic / excessive crying in infant",
+      "red_flags": ["crying accompanied by vomiting", "abdomen appears distended/hard", "fever with crying", "blood in stool", "crying suddenly stops then resumes (intussusception risk)"],
+      "triage_level": "home_care_with_monitoring",
+      "action": "Rule of 3s: colic is crying > 3 hours/day, > 3 days/week, for > 3 weeks in an otherwise healthy infant. Try: tummy massage, bicycle legs, white noise, babywearing, eliminating dairy if breastfeeding. It resolves by 3-4 months.",
+      "reasoning": "Colic is a diagnosis of exclusion. The mechanism is unclear but it's not harmful to the baby. Parent wellbeing is important — reach out for support.",
+      "products": [
+        {"name": "Colic drops (simethicone / fennel-based)", "category": "medicine"},
+        {"name": "Probiotic drops (Lactobacillus reuteri)", "category": "nutrition"},
+        {"name": "Baby massage oil", "category": "comfort"},
+        {"name": "White noise machine", "category": "comfort"},
+        {"name": "Baby carrier / ergonomic wrap", "category": "gear"}
+      ],
+      "keywords": ["colic", "crying", "fussy", "unsettled", "مغص", "بكاء", "قولون"],
+      "arabic_notes": "المغص يزول عادةً بحلول 3-4 أشهر. قطرات الغاز وتدليك البطن قد تساعد"
+    },
+    {
+      "id": "head_001",
+      "category": "neurological",
+      "age_group": "all",
+      "symptom": "head injury / fall",
+      "red_flags": ["loss of consciousness (even briefly)", "seizure after head injury", "vomiting more than once after injury", "baby won't wake or is very drowsy", "pupils of different sizes", "clear fluid from nose or ear", "worsening headache", "fall from > own height"],
+      "triage_level": "emergency_if_red_flag_else_observe",
+      "action": "If any red flags: emergency room immediately. If no red flags: observe for 24 hours. Keep child calm and resting. Wake every 2 hours through the night to check responsiveness. Ice pack for any bump. No pain relief that masks symptoms.",
+      "reasoning": "Most childhood head injuries are minor. Red flags indicate intracranial pathology (bleeding, fracture) which requires urgent imaging.",
+      "products": [
+        {"name": "Reusable gel ice pack", "category": "first_aid"},
+        {"name": "Baby/child helmet for cycling/scootering", "category": "safety"}
+      ],
+      "keywords": ["head injury", "fall", "bump", "knock", "إصابة الرأس", "سقوط", "ارتجاج"],
+      "arabic_notes": "أي فقدان للوعي أو قيء متكرر بعد السقوط = طارئة فورية"
+    },
+    {
+      "id": "dental_001",
+      "category": "dental",
+      "age_group": "infant_toddler",
+      "symptom": "teething",
+      "red_flags": ["fever > 38°C attributed to teething (teething does NOT cause high fever)", "diarrhea attributed to teething (coincidental, not causal)"],
+      "triage_level": "home_care",
+      "action": "Teething causes mild discomfort, drooling, and low-grade fussiness. Safe remedies: chilled (not frozen) teething rings, silicone teething toys, gentle gum massage. Avoid teething gels with benzocaine (not safe under 2).",
+      "reasoning": "Teething is a normal developmental process. Important: teething does NOT cause fever above 38°C. If the child has fever, look for another cause.",
+      "products": [
+        {"name": "Silicone teething ring (BPA-free)", "category": "comfort"},
+        {"name": "Chilled teething toy", "category": "comfort"},
+        {"name": "Teething biscuits (age-appropriate)", "category": "nutrition"},
+        {"name": "Amber teething necklace — NOT RECOMMENDED (choking hazard)", "category": "warning"}
+      ],
+      "keywords": ["teething", "gums", "drooling", "تسنين", "أسنان", "لثة", "لعاب"],
+      "arabic_notes": "التسنين لا يسبب الحمى العالية. حلقات التسنين المبردة تساعد"
+    },
+    {
+      "id": "eye_001",
+      "category": "ophthalmology",
+      "age_group": "all",
+      "symptom": "eye discharge / pink eye / conjunctivitis",
+      "red_flags": ["eye pain (not just irritation)", "vision changes", "cornea looks cloudy", "severe swelling around eye", "newborn with eye discharge in first week"],
+      "triage_level": "see_doctor_within_24_48h",
+      "action": "Bacterial conjunctivitis needs antibiotic drops (prescription). Viral conjunctivitis is self-limiting. Clean discharge with clean cotton pad (inner to outer corner). Very contagious — wash hands frequently.",
+      "reasoning": "Distinguishing bacterial from viral conjunctivitis is difficult without examination. Neonatal conjunctivitis requires same-day evaluation to rule out gonococcal or chlamydial infection.",
+      "products": [
+        {"name": "Sterile saline eye wash", "category": "medicine"},
+        {"name": "Sterile cotton pads", "category": "hygiene"}
+      ],
+      "keywords": ["eye", "conjunctivitis", "pink eye", "discharge", "عين", "التهاب", "إفرازات"],
+      "arabic_notes": "العيون الحمراء مع إفرازات: نظافة منتظمة وزيارة الطبيب خلال 24-48 ساعة"
+    },
+    {
+      "id": "allergy_001",
+      "category": "allergy",
+      "age_group": "all",
+      "symptom": "allergic reaction / hives",
+      "red_flags": ["throat swelling / difficulty swallowing", "breathing difficulty", "wheezing after exposure", "pale/blue color", "severe vomiting after food", "collapse/limpness"],
+      "triage_level": "emergency_if_anaphylaxis",
+      "action": "Mild hives (no systemic symptoms): antihistamine, monitor. Any signs of anaphylaxis: epinephrine auto-injector if available, call emergency immediately, lie flat with legs elevated. Do not give food or drink.",
+      "reasoning": "Anaphylaxis is life-threatening. The window for effective intervention is narrow. Erring on the side of emergency care is correct.",
+      "products": [
+        {"name": "Children's antihistamine (age-appropriate)", "category": "medicine"},
+        {"name": "Hypoallergenic baby wash", "category": "skincare"},
+        {"name": "Allergy-friendly snacks", "category": "nutrition"}
+      ],
+      "keywords": ["allergy", "hives", "reaction", "anaphylaxis", "swelling", "حساسية", "طفح", "تورم"],
+      "arabic_notes": "أي تورم في الحلق أو صعوبة تنفس بعد أكل = طارئة فورية"
+    }
+  ],
+  "age_ranges": {
+    "newborn_0_3m": {"min_months": 0, "max_months": 3, "label_en": "Newborn (0-3 months)", "label_ar": "مولود جديد (0-3 أشهر)"},
+    "infant_3_12m": {"min_months": 3, "max_months": 12, "label_en": "Infant (3-12 months)", "label_ar": "رضيع (3-12 شهراً)"},
+    "infant_0_12m": {"min_months": 0, "max_months": 12, "label_en": "Infant (0-12 months)", "label_ar": "رضيع (0-12 شهراً)"},
+    "toddler_1_5y": {"min_months": 12, "max_months": 60, "label_en": "Toddler (1-5 years)", "label_ar": "طفل صغير (1-5 سنوات)"},
+    "infant_toddler": {"min_months": 0, "max_months": 36, "label_en": "Infant/Toddler (0-3 years)", "label_ar": "رضيع/طفل صغير (0-3 سنوات)"},
+    "all": {"min_months": 0, "max_months": 120, "label_en": "All ages", "label_ar": "جميع الأعمار"}
+  },
+  "triage_levels": {
+    "emergency": {
+      "color": "#DC2626",
+      "label_en": "🚨 EMERGENCY — Go to ER / Call 999 now",
+      "label_ar": "🚨 طارئ — اتصلي بالإسعاف أو اذهبي للطوارئ الآن",
+      "defer_to_doctor": true
+    },
+    "urgent_if_red_flag_else_monitor": {
+      "color": "#F59E0B",
+      "label_en": "⚠️ Urgent if red flags present — Monitor closely otherwise",
+      "label_ar": "⚠️ عاجل إذا وُجدت علامات خطر — مراقبة دقيقة بخلاف ذلك",
+      "defer_to_doctor": true
+    },
+    "emergency_if_red_flag_else_observe": {
+      "color": "#F59E0B",
+      "label_en": "⚠️ Emergency if any red flags — Observe at home otherwise",
+      "label_ar": "⚠️ طارئ عند أي علامة خطر — مراقبة منزلية بخلاف ذلك",
+      "defer_to_doctor": true
+    },
+    "emergency_if_anaphylaxis": {
+      "color": "#DC2626",
+      "label_en": "🚨 Emergency if anaphylaxis signs — Antihistamine for mild hives",
+      "label_ar": "🚨 طارئ عند علامات الحساسية الشديدة — مضاد الهيستامين للطفح البسيط",
+      "defer_to_doctor": true
+    },
+    "see_doctor_within_24_48h": {
+      "color": "#D97706",
+      "label_en": "📋 See a doctor within 24-48 hours",
+      "label_ar": "📋 زيارة الطبيب خلال 24-48 ساعة",
+      "defer_to_doctor": true
+    },
+    "monitor_dehydration": {
+      "color": "#2563EB",
+      "label_en": "💧 Monitor for dehydration — Home care with ORS",
+      "label_ar": "💧 راقبي علامات الجفاف — رعاية منزلية مع محلول معالجة الجفاف",
+      "defer_to_doctor": false
+    },
+    "home_care": {
+      "color": "#16A34A",
+      "label_en": "✅ Home care appropriate",
+      "label_ar": "✅ الرعاية المنزلية مناسبة",
+      "defer_to_doctor": false
+    },
+    "home_care_with_monitoring": {
+      "color": "#16A34A",
+      "label_en": "✅ Home care — Monitor for red flags",
+      "label_ar": "✅ رعاية منزلية — راقبي علامات الخطر",
+      "defer_to_doctor": false
+    },
+    "monitor_with_red_flag_awareness": {
+      "color": "#16A34A",
+      "label_en": "✅ Home care — Know your red flags",
+      "label_ar": "✅ رعاية منزلية — تنبهي لعلامات الخطر",
+      "defer_to_doctor": false
+    }
+  },
+  "emergency_numbers": {
+    "UAE": "999 / 998 (ambulance)",
+    "Saudi Arabia": "911",
+    "Kuwait": "112",
+    "Qatar": "999",
+    "Bahrain": "999"
+  },
+  "disclaimer": {
+    "en": "This tool provides general information only and is NOT a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider for your child's health concerns. In an emergency, call your local emergency number immediately.",
+    "ar": "هذه الأداة تقدم معلومات عامة فقط وليست بديلاً عن الاستشارة الطبية المتخصصة أو التشخيص أو العلاج. استشيري دائماً مقدم رعاية صحية مؤهلاً لمخاوف صحة طفلك. في حالات الطوارئ، اتصلي بخدمات الطوارئ المحلية فوراً."
+  }
+}
