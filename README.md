@@ -31,7 +31,7 @@ Mumzworld's brand promise is *"we understand what moms need."* The highest-trust
 ### Prerequisites
 - Python 3.10+
 - Node.js 18+
-- An [OpenRouter](https://openrouter.ai) free API key 
+- An Groq  API key 
 
 ### 1. Clone and configure
 
