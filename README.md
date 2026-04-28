@@ -271,24 +271,26 @@ The system expresses uncertainty in four distinct ways, each machine-checkable:
 ## Project Structure
 
 ```
-mumzworld-triage/
+/ (Root)
+├── .venv/                     # Python Virtual Environment
 ├── backend/
-│   ├── main.py              # FastAPI app — triage endpoint, RAG, safety layer
-│   └── requirements.txt
+│   ├── .env                   # API Keys (Git ignored)
+│   ├── main.py                # FastAPI app: Triage logic, RAG, & Safety layer
+│   └── requirements.txt       # Python dependencies
 ├── frontend/
 │   ├── src/
-│   │   ├── App.jsx          # Full React UI — bilingual, triage cards, products
-│   │   └── main.jsx
-│   ├── index.html
-│   ├── package.json
-│   └── vite.config.js
+│   │   ├── App.jsx            # Main React UI logic & Bilingual components
+│   │   └── main.jsx           # React entry point & DOM mounting
+│   ├── index.html             # HTML Shell with Mumzworld styling
+│   ├── package.json           # Frontend dependencies (Vite, React)
+│   └── vite.config.js         # Vite configuration
 ├── data/
-│   └── symptom_knowledge.json   # RAG knowledge base — 12 pediatric conditions
+│   └── symptom_knowledge.json  # RAG knowledge base - 12 pediatric conditions
 ├── evals/
-│   ├── test_cases.json          # 12 test cases with expected outputs
-│   └── run_evals.py             # Eval runner with weighted rubric
-├── .env.example
-└── README.md
+│   ├── test_cases.json        # 12 test cases with expected outputs
+│   └── run_evals.py           # Eval runner with weighted rubric
+├── .env.example               # Template for API keys
+└── README.md                  # Comprehensive project documentation
 ```
 
 ---
