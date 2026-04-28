@@ -36,7 +36,7 @@ Mumzworld's brand promise is *"we understand what moms need."* The highest-trust
 ### 1. Clone and configure
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/mumzworld-triage
+git clone https://github.com/hema123-4/Mumzworld-Pediatric.git
 cd mumzworld-triage
 cp .env.example .env
 # Edit .env and add your OPENROUTER_API_KEY
