@@ -31,14 +31,14 @@ Mumzworld's brand promise is *"we understand what moms need."* The highest-trust
 ### Prerequisites
 - Python 3.10+
 - Node.js 18+
-- An [OpenRouter](https://openrouter.ai) free API key (or Anthropic key)
+- An [OpenRouter](https://openrouter.ai) free API key 
 
 ### 1. Clone and configure
 
 ```bash
 git clone https://github.com/hema123-4/Mumzworld-Pediatric.git
 cd mumzworld-triage
-cp .env.example .env
+cp .env
 # Edit .env and add your OPENROUTER_API_KEY
 ```
 
